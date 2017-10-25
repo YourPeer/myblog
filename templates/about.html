@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block body %}}
+    <div id="aboutme" class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-3" style="color:#2a6496;background-color: #f0f0f0">
+            <h3>个人简历</h3>
+            <hr>
+            <a href="#" class="thumbnail">
+                <img src="{% static 'images/logo1.jpg' %}" alt="my photo" class="img-circle">
+            </a>
+            <h1 style="text-align:center; margin-bottom: 8%;">连子锐</h1>
+            <p><span class="glyphicon glyphicon-user" aria-hidden="true">&nbsp;</span>男 21岁 广州</p>
+            <p><span class="glyphicon glyphicon-tree-deciduous" aria-hidden="true">&nbsp;</span>广东金融学院 本科</p>
+            <p><span class="glyphicon glyphicon-comment" aria-hidden="true">&nbsp;</span>347467045@qq.com</p>
+            <p style="margin-bottom: 8%;"><span class="glyphicon glyphicon-earphone" aria-hidden="true">&nbsp;</span>13229481609</p>
+        	<hr>
+        	<p><span class="glyphicon glyphicon-map-marker" aria-hidden="true">&nbsp;</span>自我评价</p><hr>
+        	<p style="margin-left:5%;margin-right: 5%;">热爱互联网，热爱计算机，对行业有一定的理解</p>
+        	<p style="margin-left:5%;margin-right: 5%;">学习能力强，对新事物充满好奇</p>
+        	<p style="margin-left:5%;margin-right: 5%;">工作态度认真负责，抗压能力强，具有团队协作能力</p>
+        	
+        </div>
+        <div class="col-md-6" style="margin-left:2%;color:#2a6496;background-color: #f0f0f0" id="mydetail">
+        	<h4>求职意向</h4>
+
+        </div>
+    </div>
+
+{% endblock %}}
+
+

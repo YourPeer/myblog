@@ -1,0 +1,175 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title%}博客首页{% endblock%}
+{% block body %}
+{% if message %}
+<script type="text/javascript">
+    alert("{{message}}");
+</script>
+{% endif %}
+
+
+    <div id="mainli" class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Enter your keyword" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2"><span class="glyphicon glyphicon-search" aria-hidden="true" style="color:#e26228"></span></span>
+            </div>
+            <br>
+            <h3>blog categories</h3>
+            <ul class="list-group">
+                <li class="list-group-item">1.Cras justo odio</li>
+                <li class="list-group-item">2.Dapibus ac facilisis in</li>
+                <li class="list-group-item">3.Morbi leo risus</li>
+                <li class="list-group-item">4.Porta ac consectetur ac</li>
+                <li class="list-group-item">5.Vestibulum at eros</li>
+            </ul>
+            <h3 class="allgossip">gossip&nbsp;&nbsp;&nbsp;<a href="#">ALL gossip</a></h3>
+            <div class="alert alert-success" role="alert">hello,boy<h6>14, January, 2014 </h6></div>
+            <div class="alert alert-info" role="alert">hello,boy<h6>14, January, 2014 </h6></div>
+            <div class="alert alert-warning" role="alert">hello,boy<h6>14, January, 2014 </h6></div>
+            <div class="alert alert-danger" role="alert">hello,boy<h6>14, January, 2014 </h6></div>
+            <div class="alert alert-success" role="alert">hello,boy<h6>14, January, 2014 </h6></div>
+            <div class="alert alert-info" role="alert">hello,boy<h6>14, January, 2014 </h6></div>
+        </div>
+        <div class="col-md-7">
+                <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">               {% static 'images/1.jpg' %}
+                <img class="first-slide" src="{% static 'images/1.jpg' %}" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Example headline.</h1>
+                        <p>Note: If you're viewing this page via a <code>file://</code> URL, the "next" and "previous" Glyphicon buttons on the left and right might not load/display properly due to web browser security rules.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="second-slide" src="{% static 'images/2.jpg' %}" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>Another example headline.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img class="third-slide" src="{% static 'images/3.jpg' %}" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1>One more for good measure.</h1>
+                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                        <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- /.carousel -->
+ <div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+   Mr. Johnson had never been up in an aerophane before and he had read a lot about air accidents, so one day when a friend offered to take him for a ride in his own small phane, Mr. Johnson was very worried about accepting. Finally, however, his friend persuaded him that it was very safe, and Mr. Johnson boarded the plane.<br><br>
+   <li class="learnmore">
+      <a href="#" aria-label="Next">
+      <h6>14, January, 2014 <h6><hr>
+        <span aria-hidden="true">Read More</span>
+      </a>
+    </li>
+  </div>
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">Panel title</h3>
+  </div>
+  <div class="panel-body">
+   Mr. Johnson had never been up in an aerophane before and he had read a lot about air accidents, so one day when a friend offered to take him for a ride in his own small phane, Mr. Johnson was very worried about accepting. Finally, however, his friend persuaded him that it was very safe, and Mr. Johnson boarded the plane.<br><br>
+   <li class="learnmore">
+   
+      <a href="#" aria-label="Next">
+      <h6>14, January, 2014 <h6><hr>
+        <span aria-hidden="true">Read More</span>
+      </a>
+    </li>
+  </div>
+    
+</div>
+    <!-- /hello,boy-->
+<nav aria-label="Page navigation" class="fenye">
+  <ul class="pagination">
+    <li>
+      <a href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li><a href="#">1</a></li>
+    <li><a href="#">2</a></li>
+    <li><a href="#">3</a></li>
+    <li><a href="#">4</a></li>
+    <li><a href="#">5</a></li>
+    <li>
+      <a href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+        </div>
+    </div>
+<div class="row">
+<div class="col-md-2"></div>
+<div class="col-md-9">
+    
+     <h3 class="allgossip">comment&nbsp;&nbsp;&nbsp;<a href="#">ALL comment</a></h3>
+<form action="/postcomment/" method="post">
+     <div class="input-group">
+
+        <input type="text" class="form-control" placeholder="submit the comment,thank you!" name="comment">
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">comment!</button>
+        </span>
+
+    </div>
+</form>
+    <br>
+    <div class="col-md-10 col-md-offset-1">
+            {% for comment in allComment %}
+            <div class="alert alert-success" role="alert">{{comment.comment}}<h6>{{comment_time|date:"Y-m-d"}}</h6></div>
+            <!--<div class="alert alert-info" role="alert">hello,boy<h6>14, January, 2014 </h6></div>-->
+            <!--<div class="alert alert-warning" role="alert">hello,boy<h6>14, January, 2014 </h6></div>-->
+            <!--<div class="alert alert-danger" role="alert">hello,boy<h6>14, January, 2014 </h6></div>-->
+            {% endfor %}
+        <br><br><br><hr>
+
+            <h4>Thanks for your advise!My email is 347467045@qq.com,welcome to chat with me!</h4>
+    </div>
+
+</div>
+<div class="col-md-1"></div>
+</div>
+{% endblock %}
+
+
+
+

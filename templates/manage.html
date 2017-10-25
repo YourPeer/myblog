@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block body%}
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+
+            <form  method="post" action="/blogpost/">{% csrf_token %}
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1" style="background-color:#e26228;color:white;">标题：</span>
+                    <input type="text" class="form-control" placeholder="blog_title" aria-describedby="basic-addon1" name="title">
+                </div><br><br>
+                <textarea name="editor1" id="TextArea1" cols="20" rows="2" name="content"></textarea>
+
+                <script>
+
+                    CKEDITOR.replace( 'editor1' , {toolbar : [
+                   ['Source','-','Save','NewPage','Preview','-','Templates'],
+       ['Cut','Copy','Paste','PasteText','PasteFromWord','-','Print', 'SpellChecker', 'Scayt'],
+       ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
+       ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton', 'HiddenField'],
+       '/',
+       ['Bold','Italic','Underline','Strike','-','Subscript','Superscript'],
+        ['NumberedList','BulletedList','-','Outdent','Indent','Blockquote'],
+        ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+        ['Link','Unlink','Anchor'],
+       ['Image','Flash','Table','HorizontalRule','Smiley','SpecialChar','PageBreak'],
+       '/',
+        ['Styles','Format','Font','FontSize'],
+        ['TextColor'],
+            ],uiColor: '#e26228'});
+                </script><br><br>
+                <input type="submit" class="btn btn-default" style="background-color:#e26228;color:white;">
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+{% endblock %}

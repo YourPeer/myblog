@@ -1,0 +1,95 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+}
+#jumu{
+	color: #e26228;
+	font-size: 2.76923em;
+	line-height: 1;
+	text-transform: none;
+	font-weight: 300;
+	
+}
+#row1{
+	margin-top: 40px;
+	padding-bottom: 40px;
+	border-bottom: 3px solid #e26228;
+}
+.nava{
+	display: inline-block;
+	font: normal normal normal 14px/1 ;
+	vertical-align: middle;
+	display: table-cell;
+	box-sizing: border-box;
+	font-family: "Open Sans", sans-serif;
+	font-size: 16px;
+	line-height: 1.2;
+	color: #898989;
+}
+li{
+	 list-style: none;
+}
+.nav li a:hover {
+	background-color: #e26228;
+	color: #fff;
+}
+#act a{
+	background-color: #e26228;
+}
+.nav li a{
+	margin-left: 20%;
+}
+#aboutme p{
+ margin-left: 25%;
+}
+.breadcrumb{
+	font-size: 16px;
+	padding-left: 15%;
+	color:#e26228;
+
+}
+.breadcrumb li a{
+	color:#e26228;
+}
+#mainli h3{
+	color: #e26228;
+}
+#mainli ul li:hover{
+	color: #e26228;
+}
+#mainli ul{
+	border-right: 0px;
+	border-left: 0px;
+}
+#mainli{
+	color: #898989;
+}
+.fenye{
+	text-align: center;
+}
+.learnmore{
+	float: right;
+}
+.learnmore a span{
+	color:#e26228;
+}
+.learnmore a{
+	text-decoration: none;
+}
+.learnmore a span{
+	font-size:16px;
+}
+.learnmore a span:hover{
+	font-size: 17px;
+	color:#A26A28;
+	
+}
+.allgossip a{
+	color:#898989;
+	font-size: 16px;
+	text-decoration: none;
+}
+.allgossip a:hover{
+	color:#e26228;
+}

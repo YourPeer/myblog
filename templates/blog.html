@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block body%}
+<div class="container-fluid">
+  <div class="row">
+ <div class="col-md-2"></div>
+ <div class="col-md-8">
+{% for i in allarticle %}
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><a href="#" style="color:#e26228;">{{i.title}}</a></h3>
+  </div>
+  <div class="panel-body">
+ {{i.body|striptags|truncatechars:200}}<br><br>
+   <li class="learnmore">
+      <a href="#" aria-label="Next">
+      <h6>{{i.pub_date| date:"Y-m-d"}}</h6><hr>
+        <span aria-hidden="true">Read More</span>
+      </a>
+    </li>
+  </div>
+</div>
+{% endfor %}
+</div>
+ <div class="col-md-2"></div>
+  </div>
+</div>
+{% endblock %}

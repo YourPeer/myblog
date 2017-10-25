@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}{% endblock %}
+{% block body %}
+<div class="container-fluid">
+    {{artical}}
+<div class="row">
+    <div class="col-md-2"></div>
+     <div class="col-md-9">
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title"><a href="#" style="color:#e26228;">{{artical.slug}}</a></h3>
+  </div>
+  <div class="panel-body">
+ {{ artical.body}}<br><br>
+   <li class="learnmore">
+      <a href="#" aria-label="Next">
+      <h6>{{ artical.pub_date| date:"Y-m-d"}}</h6><hr>
+      </a>
+    </li>
+  </div>
+</div>
+
+</div>
+
+
+
+
+    <div class="col-md-1"></div>
+</div>
+</div>
+{% endblock %}
